@@ -7,7 +7,10 @@
 from jinja2 import FileSystemLoader, Environment
 import json
 import subprocess
+subprocess.getoutput('tree -hr -H . -o tree.html -T "Presentations"')
 output = json.loads(subprocess.getoutput('tree -hr -J'))
+with open('tree.json', 'w+') as fd:
+    fd.write(json.dumps(output, indent=2))
 
 IGNORED_FILES = (
     'index.html',
