@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html
+    lang="en"
+    prefix="schema: http://schema.org/ ">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>presentations</title>
+    <meta name="description" content="presentations given/produced by me"/>
+    <meta name="schema:name" content="presentations">
+    <meta name="schema:description" content="presentations given/produced by me">
+    <meta name="schema:datePublished" content="2021">
+    <meta name="schema:author" content="https://harshp.com/me">
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@coolharsh55">
+    <meta name="twitter:title" content="presentations">
+    <meta name="twitter:description" content="presentations given/produced by me">
+    <meta name="twitter:creator" content="@coolharsh55">
+    <link rel="stylesheet" href="https://harshp.com/css/sitebase.css" />
+</head>
+<body>
+    <header><nav>
+        <a href="/" property="schema:isPartOf" typeof="schema:Website">harshp.com</a> 
+    </nav></header>
+    <main>
+    <article>
+        <h1 property="schema:name schema:headline">Presentations</h1>
+        <div id="description">
+            <span property="schema:author schema:publisher" typeof="schema:Person" resource="https://harshp.com/me"></span>
+            <small>provided under <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC-by-NC 4.0</a> 
+            (free to use; attribution required; not for commercial purposes) unless the presentation indicates otherwise</small>
+        </div>
+        <div id="content" property="schema:articleBody">
+            {% for year, presentations in DATA %}
+            <section id='{{year}}'>
+                <h2>{{year}}</h2>
+                <ul>
+                    {% for href, name, formats in presentations %}
+                    <li>{{ name }} ;
+                        {% for format, size in formats %}
+                        <a href="{{year}}/{{href}}.{{format}}">{{format}}</a> <small>({{size}})</small>&nbsp;
+                        {% endfor %}
+                    </li>{% endfor %}
+                </ul>
+            </section>
+            {% endfor %}
+        </div>
+    </article>
+    </main>
+    <footer>
+        <a href="https://harshp.com/me">About Me</a> | <a href="https://harshp.com/contact">Contact</a> | privacy policy n/a | license: <a class="no-reformat" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC bY-NC 4.0</a> | <a href="https://github.com/coolharsh55/presentations/">source on GitHub</a>
+    </footer>
+</body>
+</html>
