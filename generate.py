@@ -29,13 +29,17 @@ for data_year in data:
         title, extension = name.split('.')
         if title in items:
             items[title]['formats'].append((extension, size))
+            items[title]['formats'].sort()
         else:
             items[title] = {
                 'href': title,
-                'name': title.replace('_', ' '),
+                'name': title.replace('_', ' ')[:-5],
                 'formats': [(extension, size)],
             }
-    DATA.append((data_year['name'], (x.values() for x in items.values())))
+    items = sorted((
+        tuple(x.values()) for x in items.values()),
+        key=lambda x: x[0])
+    DATA.append((data_year['name'], items))
 
 template_loader = FileSystemLoader(searchpath='.')
 template_env = Environment(

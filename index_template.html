@@ -32,14 +32,14 @@
             (free to use; attribution required; not for commercial purposes) unless the presentation indicates otherwise</small>
         </div>
         <div id="content" property="schema:articleBody">
-            {% for year, presentations in DATA %}
+            {% for year, presentations in DATA | sort(reverse=true, attribute='0') %}
             <section id='{{year}}'>
                 <h2>{{year}}</h2>
                 <ul>
                     {% for href, name, formats in presentations %}
                     <li>{{ name }} ;
                         {% for format, size in formats %}
-                        <a href="{{year}}/{{href}}.{{format}}">{{format}}</a> <small>({{size}})</small>&nbsp;
+                        <a href="{{year}}/{{href}}.{{format}}">{{format}}</a> <small>({{size}})</small>
                         {% endfor %}
                     </li>{% endfor %}
                 </ul>
