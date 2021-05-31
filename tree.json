@@ -50,6 +50,16 @@
           },
           {
             "type": "file",
+            "name": "PAECG_OpenIdentity_Consent_2021.pptx",
+            "size": "1.9M"
+          },
+          {
+            "type": "file",
+            "name": "PAECG_OpenIdentity_Consent_2021.pdf",
+            "size": "982K"
+          },
+          {
+            "type": "file",
             "name": "Misc_DCU_MDPP_Consent_2021.pptx",
             "size": "1.3M"
           },
@@ -477,6 +487,6 @@
   {
     "type": "report",
     "directories": 7,
-    "files": 84
+    "files": 86
   }
 ]
