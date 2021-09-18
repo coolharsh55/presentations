@@ -31,7 +31,7 @@
       {
         "type": "directory",
         "name": "2021",
-        "size": "4.0K",
+        "size": "384",
         "contents": [
           {
             "type": "file",
@@ -70,6 +70,11 @@
           },
           {
             "type": "file",
+            "name": "Collab_SEMANTiCS_ROPA_Catalogue_2021.pdf",
+            "size": "988K"
+          },
+          {
+            "type": "file",
             "name": "Collab_ConPro_Benefits_Consent_2021.pptx",
             "size": "589K"
           },
@@ -83,13 +88,8 @@
       {
         "type": "directory",
         "name": "2020",
-        "size": "4.0K",
+        "size": "608",
         "contents": [
-          {
-            "type": "file",
-            "name": "PROTECT_Knowledge_Modelling_2020.pptx",
-            "size": "981K"
-          },
           {
             "type": "file",
             "name": "PhD_Viva_Mock_2020.pptx",
@@ -124,6 +124,11 @@
             "type": "file",
             "name": "PhD_ADAPT_Townhall_gdpr_2020.pdf",
             "size": "706K"
+          },
+          {
+            "type": "file",
+            "name": "PROTECT_Knowledge_Modelling_2020.pptx",
+            "size": "981K"
           },
           {
             "type": "file",
@@ -175,7 +180,7 @@
       {
         "type": "directory",
         "name": "2019",
-        "size": "4.0K",
+        "size": "512",
         "contents": [
           {
             "type": "file",
@@ -252,7 +257,7 @@
       {
         "type": "directory",
         "name": "2018",
-        "size": "4.0K",
+        "size": "864",
         "contents": [
           {
             "type": "file",
@@ -266,11 +271,6 @@
           },
           {
             "type": "file",
-            "name": "PhD_SEMANTiCS_Queryable_Metadata_2018.pdf",
-            "size": "7.1M"
-          },
-          {
-            "type": "file",
             "name": "PhD_SEMANTiCS_explore_GDPR_compliance_SHACL_postrer.pptx",
             "size": "7.4M"
           },
@@ -278,6 +278,11 @@
             "type": "file",
             "name": "PhD_SEMANTiCS_explore_GDPR_compliance_SHACL_postrer.pdf",
             "size": "1.5M"
+          },
+          {
+            "type": "file",
+            "name": "PhD_SEMANTiCS_Queryable_Metadata_2018.pdf",
+            "size": "7.1M"
           },
           {
             "type": "file",
@@ -384,7 +389,7 @@
       {
         "type": "directory",
         "name": "2017",
-        "size": "4.0K",
+        "size": "448",
         "contents": [
           {
             "type": "file",
@@ -451,7 +456,7 @@
       {
         "type": "directory",
         "name": "2016",
-        "size": "4.0K",
+        "size": "160",
         "contents": [
           {
             "type": "file",
@@ -473,7 +478,7 @@
       {
         "type": "directory",
         "name": "2015",
-        "size": "4.0K",
+        "size": "96",
         "contents": [
           {
             "type": "file",
@@ -487,6 +492,6 @@
   {
     "type": "report",
     "directories": 7,
-    "files": 86
+    "files": 87
   }
 ]
